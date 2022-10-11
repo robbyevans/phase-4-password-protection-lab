@@ -2,7 +2,7 @@
 
 
 import { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+// import { Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import NewEventForm from "./NewEventForm";
 import EventItem from "./EventItem";
@@ -45,11 +45,10 @@ function Home({ user }) {
   
   if (user) {
     return <><h1>Welcome, {user.username}!</h1>
-    <h1>This is the landing page</h1>
 
     {/* part-3:body content */}
 
-    <Header spiceCount={events.length} />
+    <h1>live:{events.length}</h1>
       <main>
 
       <button className="btn" onClick={handleClick}> Add Event +</button>

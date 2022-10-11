@@ -6,7 +6,6 @@ function Header({ spiceCount }) {
       </div>
       <div className="sub_heading">
         <h3 >Find the perfect activity for you.</h3>
-        <h4>live: {spiceCount}</h4>
       </div>
     </header>
   );

@@ -12,18 +12,20 @@ function NavBar({ user, setUser }) {
 
   return (
     <header>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
-      <div>
-        {user ? (
-          <button onClick={handleLogoutClick}>Logout</button>
-        ) : (
-          <>
-            <Link to="/signup">Signup</Link>
-            <Link to="/login">Login</Link>
-          </>
-        )}
+      <div class="nav_bar">
+        {/* <div> */}
+          <Link className="link" to="/">Home</Link>
+        {/* </div> */}
+        {/* <div> */}
+          {user ? (
+            <button onClick={handleLogoutClick}>Logout</button>
+          ) : (
+            <>
+              <Link className="link" to="/signup">Signup</Link>
+              <Link className="link" to="/login">Login</Link>
+            </>
+          )}
+        {/* </div> */}
       </div>
     </header>
   );

@@ -20,8 +20,14 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <NavBar user={user} setUser={setUser} />
+
+        <div className="banner_title"><Header/></div>
+        <div class="banner">
+          <div class="mini">
+            <NavBar user={user} setUser={setUser} />
+          </div>
+        </div>
+
       <main>
         {user ? (
           <Switch>

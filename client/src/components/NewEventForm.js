@@ -3,7 +3,7 @@ import { useState } from "react";
 const initialState = {
   title: "",
   image: "",
-  notes: "",
+  location: "",
   description: "",
   rating: "",
 };
@@ -28,9 +28,9 @@ function NewSpiceForm({ onAddSpice }) {
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())
-      .then((newSpice) => {
+      .then((newEvent) => {
         setFormData(initialState);
-        onAddSpice(newSpice);
+        onAddSpice(newEvent);
       });
   }
 
@@ -54,8 +54,8 @@ function NewSpiceForm({ onAddSpice }) {
       <label htmlFor="notes">Location: </label>
       <input
         type="text"
-        id="notes"
-        value={formData.notes}
+        id="location"
+        value={formData.location}
         onChange={handleChange}
       />
         <label htmlFor="image">Image URL: </label>
