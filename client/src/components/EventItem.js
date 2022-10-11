@@ -41,7 +41,7 @@ function SpiceItem({ spice, onUpdateSpice, onDeleteSpice }) {
       <img src={image} alt={title} />
       <div className="details">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p> {description} </p>
         <p>
           Location: <em>{location}</em>
         </p>
