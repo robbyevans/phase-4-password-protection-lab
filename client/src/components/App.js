@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import Header from "./Header";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       <NavBar user={user} setUser={setUser} />
       <main>
         {user ? (
